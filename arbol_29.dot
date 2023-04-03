@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="ZSN_A <= 0.5\nsamples = 1319\nvalue = [1014, 305]\nclass = NO ZSN", fillcolor="#eda775"] ;
+1 [label="endocr_01 <= 0.5\nsamples = 1183\nvalue = [967, 216]\nclass = NO ZSN", fillcolor="#eb9d65"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="NA_R_2_n <= 1.5\nsamples = 1034\nvalue = [869, 165]\nclass = NO ZSN", fillcolor="#ea995f"] ;
+1 -> 2 ;
+3 [label="samples = 1015\nvalue = [860, 155]\nclass = NO ZSN", fillcolor="#ea985d"] ;
+2 -> 3 ;
+4 [label="samples = 19\nvalue = [9, 10]\nclass = ZSN", fillcolor="#ebf5fc"] ;
+2 -> 4 ;
+5 [label="zab_leg_01 <= 0.5\nsamples = 149\nvalue = [98, 51]\nclass = NO ZSN", fillcolor="#f3c3a0"] ;
+1 -> 5 ;
+6 [label="samples = 141\nvalue = [97, 44]\nclass = NO ZSN", fillcolor="#f1ba93"] ;
+5 -> 6 ;
+7 [label="samples = 8\nvalue = [1, 7]\nclass = ZSN", fillcolor="#55abe9"] ;
+5 -> 7 ;
+8 [label="ZSN_A <= 1.5\nsamples = 136\nvalue = [47, 89]\nclass = ZSN", fillcolor="#a2d1f3"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="ritm_ecg_p_07 <= 0.5\nsamples = 85\nvalue = [12, 73]\nclass = ZSN", fillcolor="#5aade9"] ;
+8 -> 9 ;
+10 [label="samples = 64\nvalue = [5, 59]\nclass = ZSN", fillcolor="#4aa5e7"] ;
+9 -> 10 ;
+11 [label="samples = 21\nvalue = [7, 14]\nclass = ZSN", fillcolor="#9ccef2"] ;
+9 -> 11 ;
+12 [label="K_BLOOD <= 3.55\nsamples = 51\nvalue = [35, 16]\nclass = NO ZSN", fillcolor="#f1bb94"] ;
+8 -> 12 ;
+13 [label="samples = 5\nvalue = [0, 5]\nclass = ZSN", fillcolor="#399de5"] ;
+12 -> 13 ;
+14 [label="samples = 46\nvalue = [35, 11]\nclass = NO ZSN", fillcolor="#eda977"] ;
+12 -> 14 ;
+}

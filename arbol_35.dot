@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="ZSN_A <= 0.5\nsamples = 1352\nvalue = [1045, 307]\nclass = NO ZSN", fillcolor="#eda673"] ;
+1 [label="OTEK_LANC <= 0.5\nsamples = 1217\nvalue = [997, 220]\nclass = NO ZSN", fillcolor="#eb9d65"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="AGE <= 61.5\nsamples = 1113\nvalue = [930, 183]\nclass = NO ZSN", fillcolor="#ea9a60"] ;
+1 -> 2 ;
+3 [label="samples = 524\nvalue = [467, 57]\nclass = NO ZSN", fillcolor="#e89051"] ;
+2 -> 3 ;
+4 [label="samples = 589\nvalue = [463, 126]\nclass = NO ZSN", fillcolor="#eca36f"] ;
+2 -> 4 ;
+5 [label="ROE <= 7.5\nsamples = 104\nvalue = [67, 37]\nclass = NO ZSN", fillcolor="#f3c7a6"] ;
+1 -> 5 ;
+6 [label="samples = 39\nvalue = [32, 7]\nclass = NO ZSN", fillcolor="#eb9d64"] ;
+5 -> 6 ;
+7 [label="samples = 65\nvalue = [35, 30]\nclass = NO ZSN", fillcolor="#fbede3"] ;
+5 -> 7 ;
+8 [label="ZSN_A <= 1.5\nsamples = 135\nvalue = [48, 87]\nclass = ZSN", fillcolor="#a6d3f3"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="S_AD_ORIT <= 210.0\nsamples = 81\nvalue = [10, 71]\nclass = ZSN", fillcolor="#55abe9"] ;
+8 -> 9 ;
+10 [label="samples = 80\nvalue = [9, 71]\nclass = ZSN", fillcolor="#52a9e8"] ;
+9 -> 10 ;
+11 [label="samples = 1\nvalue = [1, 0]\nclass = NO ZSN", fillcolor="#e58139"] ;
+9 -> 11 ;
+12 [label="Na_BLOOD <= 138.5\nsamples = 54\nvalue = [38, 16]\nclass = NO ZSN", fillcolor="#f0b68c"] ;
+8 -> 12 ;
+13 [label="samples = 41\nvalue = [25, 16]\nclass = NO ZSN", fillcolor="#f6d2b8"] ;
+12 -> 13 ;
+14 [label="samples = 13\nvalue = [13, 0]\nclass = NO ZSN", fillcolor="#e58139"] ;
+12 -> 14 ;
+}
